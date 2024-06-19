@@ -1,0 +1,40 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+.hero-section span {
+  width: 80%;
+  text-align: center;
+  font-size: 4.4rem;
+  color: #35262f;
+  font-family: "Sedan SC", serif;
+}
+.blog-list_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blog-list {
+  padding: 2px 6px;
+  transition: all 0.2s;
+}
+.blog-list:hover {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.548);
+}
+.blog-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-list_preview {
+  font-size: 1.6rem;
+}
+
+.home-blog_wrapper {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}

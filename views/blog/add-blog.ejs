@@ -1,0 +1,36 @@
+<%- include("../includes/head") %>
+  <link rel="stylesheet" href="/css/blog.css">
+
+  </head>
+  
+  <body>
+      <%- include("../includes/navigation") %>
+
+      <main class="container">
+        <% if(error.length>0){ %>
+          <div class="error-container">
+            <p class="error-msg">
+              <%= error %>
+            </p>
+          </div>
+          <%} %>
+        <div class="add-blog_container">
+          <p class="primary-heading">Add New Post</p>
+
+
+          <form action="/blog/add-post" method="POST" class="add-post_form">
+
+            <label for="title"><b class="txt-medium">Title</b></label>
+            <input type="text" placeholder="Post Title" name="title" required>
+
+            <label for="body"><b class="txt-medium">Content (Use Markdown format)</b></label>
+            <textarea name="description" cols="50" rows="10" required></textarea>
+
+            <input type="submit" value="Add" class="submit-btn">
+
+          </form>
+        </div>
+      </main>
+    </body>
+
+    </html>

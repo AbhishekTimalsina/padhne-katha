@@ -1,0 +1,19 @@
+<header>
+  <div class="nav-logo">
+    <a href="/">Padhne Katha</a>
+  </div>
+  <nav class="nav">
+    <% if(isLogged) {%>
+    <a href="/user/<%= userId %>" class="nav-link txt-medium">My Profile</a>
+    <a href="/blog/new" class="nav-link txt-medium">Add Blog</a>
+    <% } %>
+  </nav>
+  <div class="auth-nav_container">
+    <% if(!isLogged) {%>
+    <a href="/login" class="auth-nav_btn">Login</a>
+    <a href="/signup" class="auth-nav_btn">Signup</a>
+    <% } else {%>
+    <a href="/logout" class="auth-nav_btn">Logout</a>
+    <% } %>
+  </div>
+</header>

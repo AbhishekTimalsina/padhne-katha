@@ -1,0 +1,120 @@
+.blog-heading {
+  font-size: 4.2rem;
+  font-weight: 500;
+  font-family: "Sedan SC", serif;
+}
+.blog-author_name {
+  color: rgb(93 93 93);
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.blog-date {
+  line-height: 1;
+  color: rgb(93 93 93);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.blog-description {
+  margin-top: 22px;
+  color: #260d1c;
+  min-height: 50vh;
+}
+.blog-description * {
+  font-size: 1.8rem;
+}
+.blog-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+.author-options {
+  display: flex;
+  gap: 8px;
+}
+.author-btn {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.btn-del {
+  background-color: #e05263;
+}
+.btn-edit {
+  background-color: #569dae;
+}
+.blog-back_btn {
+  font-size: 22px;
+  font-weight: 500;
+  color: #525174;
+  width: fit-content;
+}
+.add-blog_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-post_form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 12px;
+}
+.add-post_form input {
+  font-size: 1.5rem;
+  padding: 2px 4px;
+  outline: none;
+}
+.add-post_form textarea {
+  font-size: 1.6rem;
+  padding: 2px 4px;
+  outline: none;
+}
+.add-post_form .submit-btn {
+  cursor: pointer;
+  background-color: #2e86ab;
+  color: white;
+  font-size: 1.8rem;
+  padding: 4px 6px;
+  border: none;
+}
+
+/* for markdown  */
+.blog-description h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.blog-description h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.blog-description h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.blog-description h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.blog-description h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.blog-description h6 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.blog-description p {
+  font-size: 1.8rem;
+}
+.blog-description a {
+  font-size: 1.8rem;
+  color: #374c9e;
+  font-weight: 500;
+}

@@ -1,0 +1,42 @@
+<%- include("../includes/head") %>
+<link rel="stylesheet" href="/css/auth.css">
+
+</head>
+
+<body>
+  <%- include("../includes/navigation") %>
+
+  <% if(error.length>0){ %>
+    <div class="error-container">
+      <p class="error-msg"><%= error %></p>
+    </div>
+    <%}  %>
+<main class="container">
+    <div class="auth-form_container">
+      <p class="primary-heading">Signup</p>
+    
+    
+    <form action="/signup" method="POST" class="auth-form">
+    
+   
+      <label for="title"><b class="txt-medium">Username</b></label>
+      <input type="text" name="username" required>
+    
+
+      <label for="title"><b class="txt-medium">Email</b></label>
+      <input type="email" name="email" required>
+    
+      <label for="password"><b class="txt-medium">Password</b></label>
+      <input type="password" name="password" cols="50" rows="10" required>
+    
+      <label for="password"><b class="txt-medium">Confirm Password</b></label>
+      <input type="password" name="confirmPassword" cols="50" rows="10" required>
+
+      <input type="submit" value="Signup" class="btn">
+    
+    </form>
+  </div>
+</main>
+  </body>
+  </html>
+  

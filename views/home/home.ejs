@@ -1,0 +1,26 @@
+<%- include("../includes/head.ejs") %>
+<link rel="stylesheet" href="/css/home.css">
+  </head>
+  <body>
+ <%- include("../includes/navigation.ejs") %>
+    <main class="container">
+      <section class="hero-section">
+        <span>"Discover the beauty and wonder in every word."</span>
+      </section>
+      <div class="home-blog_wrapper">
+      <h2 class="primary-heading blog-container_heading">All Blogs</h2>
+      <ul class="blog-list_container">
+        <% blogData.forEach(blog => { %>
+          <li class="blog-list">
+            <a class="" href="/blog/<%= blog._id %>">
+              <span class="txt-large"><%= blog.title %></span>
+              <span class="txt-small"><%= blog.Date.toDateString() %></span>
+            </a>
+          </li>     
+       <% }); %>
+
+      </ul>
+    </div>
+    </main>
+  </body>
+</html>

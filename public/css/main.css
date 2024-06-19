@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #35262f;
+}
+body {
+  min-height: 100vh;
+  background-color: #ffe8c9;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 10px 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5f1a44;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.nav-link {
+  font-size: 1.8rem;
+}
+
+.auth-nav_container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.auth-nav_btn {
+  font-size: 1.8rem;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.primary-heading {
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: "Sedan SC", serif;
+}
+.txt-large {
+  font-size: 2.2rem;
+}
+.txt-medium {
+  font-size: 1.8rem;
+}
+.txt-small {
+  font-size: 1.4rem;
+}
+.txt-center {
+  text-align: center;
+}
+
+.error-container {
+  margin: 10px 0px 10px;
+}
+
+.error-msg {
+  background: #ff00004d;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}

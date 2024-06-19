@@ -1,0 +1,26 @@
+<%- include("../includes/head") %>
+<link rel="stylesheet" href="/css/blog.css">
+
+</head>
+<body >
+<%- include("../includes/navigation") %>
+    <main class="container">
+        <h2 class="blog-heading"> <%= blogData.title %></h2>
+        <p><a class="blog-author_name" href="/user/<%= blogData.author._id %>"><%= blogData.author.username %></a></p>
+        <p class="blog-date">Posted At: <%= blogData.Date.toDateString() %></p>
+        <div class="blog-description"> <%- blogDescription %> </div>
+        <div class="blog-bottom"> 
+        <% if(isAuthor){ %>
+          <div class="author-options">
+            <form action="/blog/<%= blogData._id %>?_method=DELETE" method="post">
+               <button class="author-btn btn-del">Delete</button>
+            </form>
+            <a href="/blog/<%= blogData._id %>/edit"><button class="author-btn btn-edit">Edit</button></a>
+       </div> 
+        <% }%>
+        
+    <a class="blog-back_btn" href="/">Go back</a>
+</div>
+    </main>
+</body>
+</html>

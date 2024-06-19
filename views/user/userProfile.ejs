@@ -1,0 +1,28 @@
+<%- include("../includes/head") %>
+<link rel="stylesheet" href="/css/user.css">
+
+</head>
+<body>
+<%- include("../includes/navigation") %>
+  <main class="container">
+    <div class="user-profile_wrapper">
+  <div class="user-top">
+    <div class="user-img"></div>
+    <div class="user-info">
+    <h2 class="user-name"><%= userData.username %></h2>
+    <p>Joined On: <%= userData.Date.toDateString() %></p>
+  </div>
+  </div>
+  <ul class="blog-list_container">
+    <% blogData.forEach(blog => { %>
+        <li class="blog-list">
+            <a class="" href="/blog/<%= blog._id %>">
+              <span class="txt-large"><%= blog.title %></span>
+              <span class="txt-small"><%= blog.Date.toDateString() %></span>
+            </a>
+          </li>     
+    <% }); %>
+  </ul>
+  </div>
+  </main>
+</body>

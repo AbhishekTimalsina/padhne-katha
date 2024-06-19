@@ -1,0 +1,38 @@
+<%- include("../includes/head") %>
+  <link rel="stylesheet" href="/css/auth.css">
+
+  </head>
+
+  <body>
+    <%- include("../includes/navigation") %>
+
+
+      <main class="container">
+
+        <% if(error.length>0){ %>
+          <div class="error-container">
+            <p class="error-msg">
+              <%= error %>
+            </p>
+          </div>
+          <%} %>
+            <div class="auth-form_container">
+              <p class="primary-heading">Login</p>
+
+
+              <form action="/login" method="POST" class="auth-form">
+
+                <label for="title"><b class="txt-medium">Email</b></label>
+                <input type="email" name="email" required>
+
+                <label for="password"><b class="txt-medium">Password</b></label>
+                <input type="password" name="password" cols="50" rows="10" required>
+
+                <input type="submit" value="Login" class="btn">
+
+              </form>
+            </div>
+      </main>
+  </body>
+
+  </html>
