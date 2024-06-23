@@ -6,6 +6,7 @@ const methodOverride = require("method-override");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
+const { job } = require("./cron.js");
 
 const homeRoutes = require("./routes/home");
 const blogRoutes = require("./routes/blog");
@@ -15,6 +16,9 @@ const userRoutes = require("./routes/user");
 const PORT = process.env.PORT || 3000;
 
 const mongoURI = process.env.MONGODB_URI;
+
+job.start();
+
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
