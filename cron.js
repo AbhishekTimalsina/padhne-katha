@@ -2,7 +2,7 @@
 const cron = require("cron");
 const https = require("https");
 
-const backendUrl = "https://logger-kyyx.onrender.com/";
+const backendUrl = "https://padhne-katha.onrender.com/";
 const job = new cron.CronJob("0 */14 * * * *", function () {
   // This function will be executed every 14 minutes.
   console.log("Restarting server");
